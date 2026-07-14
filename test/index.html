@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>メンタルヘルスラボの訪問看護 福岡｜心に寄り添う訪問看護</title>
+<meta name="description" content="福岡で精神疾患を抱える方とご家族に寄り添う訪問看護。就労支援連携・家族サポートに強み。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700;900&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script src="image_slot.js"></script>
+<script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<!-- ===== Header ===== -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="brand">
+      <div class="brand-mark">🌱</div>
+      <div class="brand-name" data-tw="brandName">
+        メンタルヘルスラボの訪問看護
+        <span class="sub" data-tw="brandSub">Fukuoka Visit Nursing</span>
+      </div>
+    </a>
+    <nav class="nav-links">
+      <a href="#worry">お悩み</a>
+      <a href="#services">サービス</a>
+      <a href="#voice">利用者の声</a>
+      <a href="#reasons">選ばれる理由</a>
+      <a href="#flow">流れ</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#contact" class="header-cta">💬 無料相談する</a>
+    <button class="menu-toggle" aria-label="menu">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/>
+      </svg>
+    </button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" data-editable-section="hero" data-section-label="ファーストビュー">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <span class="hero-tag"><span class="dot"></span><span data-tw="heroTag">精神特化</span></span>
+      <span class="hero-tag"><span class="dot"></span><span data-tw="heroTag">福岡市及び近辺エリア（広域）</span></span>
+      <span class="hero-tag"><span class="dot"></span><span data-tw="heroTag">社会復帰サポート|※就労支援専門相談窓口あり</span></span>
+      <span class="hero-tag"><span class="dot"></span><span data-tw="heroTag">児童対応|※家族支援含</span></span>
+      <h1>
+        <span data-tw="heroTitle1">就労移行が母体の</span><br>
+        <span class="accent green-word" data-tw="heroTitle2">社会復帰を応援する訪問看護ステーション</span><span data-tw="heroTitle3">を。</span>
+      </h1>
+      <p class="hero-lead" data-tw="heroLead">
+        精神疾患を抱えるご本人とご家族の暮らしを、看護師が定期的にご自宅へお伺いして支えます。就労支援との連携や家族へのサポートまで、あなたのペースで一緒に歩みます。
+      </p>
+      <div class="hero-cta-row">
+        <a href="#contact" class="btn btn-primary" data-tw="heroCta1">✉︎ 無料で相談してみる</a>
+        <a href="#line" class="btn btn-line" data-tw="heroCta2">LINEで問い合わせ</a>
+      </div>
+      <div class="hero-quick">
+        <div class="hero-quick-item"><span class="check">✓</span><span data-tw="heroQuick1">医療保険適用</span></div>
+        <div class="hero-quick-item"><span class="check">✓</span><span data-tw="heroQuick2">相談無料</span></div>
+        <div class="hero-quick-item"><span class="check">✓</span><span data-tw="heroQuick2">体験無料</span></div>
+        <div class="hero-quick-item"><span class="check">✓</span><span data-tw="heroQuick3">ご家族相談OK</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="main-img">
+        <image-slot id="hero-main" shape="rect" placeholder="訪問看護の様子（メイン写真）"></image-slot>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 悩みセクション ===== -->
+<section class="worry" id="worry" data-editable-section="worry" data-section-label="こんなお悩みありませんか？">
+  <div class="container">
+    <span class="section-eyebrow">Worry</span>
+    <h2 class="section-title">こんな<span class="accent">お悩み</span>、ありませんか？</h2>
+    <p class="section-sub">一人で抱え込まなくて大丈夫。ひとつでも当てはまることがあれば、ぜひご相談ください。</p>
+
+    <div class="worry-grid" data-editable-list="worry-items">
+      <div class="worry-card" data-editable-item>
+        <div class="icon">💊</div>
+        <p data-tw="worry1">お薬をつい<span class="em">飲み忘れてしまう</span>…<br>お薬が合わない気がする</p>
+      </div>
+      <div class="worry-card" data-editable-item>
+        <div class="icon">👥</div>
+        <p data-tw="worry2"><span class="em">対人関係</span>がうまくいかず、<br>疲れてしまう</p>
+      </div>
+      <div class="worry-card" data-editable-item>
+        <div class="icon">🏠</div>
+        <p data-tw="worry3"><span class="em">家から出る</span>のがつらく、<br>外出のきっかけがつかめない</p>
+      </div>
+      <div class="worry-card" data-editable-item>
+        <div class="icon">💼</div>
+        <p data-tw="worry4"><span class="em">社会復帰</span>したいけど、<br>どうしたらいいか分からない</p>
+      </div>
+      <div class="worry-card" data-editable-item>
+        <div class="icon">👨‍👩‍👧</div>
+        <p data-tw="worry5"><span class="em">家族</span>が精神疾患を抱えており、<br>支え方に悩んでいる</p>
+      </div>
+      <div class="worry-card" data-editable-item>
+        <div class="icon">🌙</div>
+        <p data-tw="worry6"><span class="em">睡眠</span>のリズムが崩れ、<br>生活が不規則になっている</p>
+      </div>
+    </div>
+
+    <div class="worry-summary">
+      <span class="arrow">▼</span>
+      <h3><span data-tw="worrySummary1">そのお悩み、</span><span class="em" data-tw="worrySummary2">訪問看護</span><span data-tw="worrySummary3">で解決できます！</span></h3>
+    </div>
+  </div>
+</section>
+
+<!-- ===== サービス紹介 ===== -->
+<section class="services" id="services" data-editable-section="services" data-section-label="訪問看護でできること">
+  <div class="container">
+    <span class="section-eyebrow">Services</span>
+    <h2 class="section-title">訪問看護で<span class="green-word">できること</span></h2>
+    <p class="section-sub">看護師がご自宅にお伺いし、療養生活を医療面・生活面の両方から支えます。</p>
+
+    <div class="services-grid" data-editable-list="services-items">
+      <div class="service-card" data-editable-item>
+        <div class="num">01</div>
+        <div>
+          <h3 data-tw="service1Title">健康状態の観察・相談</h3>
+          <p data-tw="service1Body">体調や気分の波、睡眠、食事、服薬の状況を丁寧に伺い、主治医と連携しながら安心して暮らせるようサポートします。</p>
+        </div>
+      </div>
+      <div class="service-card" data-editable-item>
+        <div class="num">02</div>
+        <div>
+          <h3 data-tw="service2Title">服薬管理・アドバイス</h3>
+          <p data-tw="service2Body">飲み忘れ防止の工夫、副作用への相談、主治医への情報共有まで、お薬に関する不安を一緒に解決していきます。</p>
+        </div>
+      </div>
+      <div class="service-card" data-editable-item>
+        <div class="num">03</div>
+        <div>
+          <h3 data-tw="service3Title">生活リズムの立て直し</h3>
+          <p data-tw="service3Body">睡眠・食事・外出などの日常生活を無理のないペースで整えていきます。小さな一歩から一緒に取り組みます。</p>
+        </div>
+      </div>
+      <div class="service-card" data-editable-item>
+        <div class="num">04</div>
+        <div>
+          <h3 data-tw="service4Title">社会復帰・就労支援連携</h3>
+          <p data-tw="service4Body">就労支援事業所やデイケアと連携し、あなたのペースに合った社会復帰のステップを一緒に考えます。</p>
+        </div>
+      </div>
+      <div class="service-card" data-editable-item>
+        <div class="num">05</div>
+        <div>
+          <h3 data-tw="service5Title">ご家族へのサポート</h3>
+          <p data-tw="service5Body">支えるご家族の悩みや疲れにも寄り添います。関わり方のアドバイス、時には第三者としての橋渡しも。</p>
+        </div>
+      </div>
+      <div class="service-card" data-editable-item>
+        <div class="num">06</div>
+        <div>
+          <h3 data-tw="service6Title">医療機関との連絡調整</h3>
+          <p data-tw="service6Body">主治医・病院・行政機関との連絡を代行・調整。書類やお手続きのご相談もお任せください。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 利用者の声 Before/After ===== -->
+<section class="voice" id="voice" data-editable-section="voice" data-section-label="利用者の声" data-editable-list="voice-items">
+  <div class="container">
+    <span class="section-eyebrow">Voice</span>
+    <h2 class="section-title"><span class="accent">利用者様</span>の声</h2>
+    <p class="section-sub">訪問看護を利用された方々のBefore & Afterをご紹介します。</p>
+
+    <div class="voice-card" data-editable-item>
+      <div class="voice-persona">
+        <div class="voice-avatar">
+          <img src="C:\Users\matsu\OneDrive\デスクトップ\test\img\画像1.jpg" shape="circle" placeholder="利用者様の写真"></image-slot>
+        </div>
+        <div class="voice-tags">
+          <span class="voice-tag">20代女性</span>
+          <span class="voice-tag">適応障がい</span>
+          <span class="voice-tag">Fさん</span>
+        </div>
+      </div>
+      <div class="voice-content">
+        <h3 data-tw="voice1Title">毎日出勤できなかったFさん</h3>
+        <div class="ba-block">
+          <span class="ba-label before">BEFORE ・ 以前の状況</span>
+          <p data-tw="voice1Before">出勤が週1〜2日できたら多い方。全く出勤できない時は自己嫌悪に陥っていました。</p>
+        </div>
+        <div class="ba-arrow">▼</div>
+        <div class="ba-block">
+          <span class="ba-label after">AFTER ・ 訪問看護利用後</span>
+          <p data-tw="voice1After">自宅からの送出支援により<span class="em">週3〜4日、遅刻をしてでも出勤できるように。</span>職場での不安事や人間関係も看護師へ相談できるようになり、本人の自己肯定感が上がりました。</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="voice-card" data-editable-item>
+      <div class="voice-persona">
+        <div class="voice-avatar">
+          <img src="C:\Users\matsu\OneDrive\デスクトップ\test\img\画像2.jpg" shape="circle" placeholder="利用者様の写真"></image-slot>
+        </div>
+        <div class="voice-tags">
+          <span class="voice-tag">40代男性</span>
+          <span class="voice-tag">うつ・PTSD</span>
+          <span class="voice-tag">Iさん</span>
+        </div>
+      </div>
+      <div class="voice-content">
+        <h3 data-tw="voice2Title">体調予測が難しかったIさん</h3>
+        <div class="ba-block">
+          <span class="ba-label before">BEFORE ・ 以前の状況</span>
+          <p data-tw="voice2Before">月1回の通院の際に担当医へ相談するのみで、体調のことをうまく伝えきれず、どうしたら精神的な波が大きくならないかわからない状態でした。</p>
+        </div>
+        <div class="ba-arrow">▼</div>
+        <div class="ba-block">
+          <span class="ba-label after">AFTER ・ 訪問看護利用後</span>
+          <p data-tw="voice2After">自宅へ看護師が訪問してくれることで、落ち着いて自身の体調の相談ができるようになりました。<span class="em">現在は内定を3社からいただけています。</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="voice-card" data-editable-item>
+      <div class="voice-persona">
+        <div class="voice-avatar">
+          <img src="C:\Users\matsu\OneDrive\デスクトップ\test\img\画像3.jpg" shape="circle" placeholder="ご家族の写真"></image-slot>
+        </div>
+        <div class="voice-tags">
+          <span class="voice-tag">30代女性</span>
+          <span class="voice-tag">うつ</span>
+          <span class="voice-tag">Mさん</span>
+        </div>
+      </div>
+      <div class="voice-content">
+        <h3 data-tw="voice3Title">生活保護を脱却したいMさん</h3>
+        <div class="ba-block">
+          <span class="ba-label before">BEFORE ・ 以前の状況</span>
+          <p data-tw="voice3Before">精神的な波や食事、服薬の管理などが難しく、また自宅へ引きこもり、外出することもままならない状態でした。</p>
+        </div>
+        <div class="ba-arrow">▼</div>
+        <div class="ba-block">
+          <span class="ba-label after">AFTER ・ 訪問看護利用後</span>
+          <p data-tw="voice3After">福祉サービスを利用して<span class="em">週4日事業所へ通所できるように</span>なりました。また、簿記2級の資格取得を目指して奮闘中です。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 選ばれる理由 ===== -->
+<section class="reasons" id="reasons" data-editable-section="reasons" data-section-label="選ばれる理由">
+  <div class="container">
+    <span class="section-eyebrow">Reasons</span>
+    <h2 class="section-title"><span class="green-word">選ばれる</span>理由・強み</h2>
+    <p class="section-sub">私たちが大切にしていること、他にはない3つの強みをご紹介します。</p>
+
+    <div class="reasons-grid" data-editable-list="reasons-items">
+      <div class="reason-card" data-editable-item>
+        <div class="reason-num">01</div>
+        <div class="reason-icon">🤝</div>
+        <h3 data-tw="reason1Title">就労支援との<br>強い連携ネットワーク</h3>
+        <p data-tw="reason1Body">福岡市内の就労支援事業所・デイケアと密に連携。社会復帰への道のりを、一貫してサポートします。</p>
+      </div>
+      <div class="reason-card" data-editable-item>
+        <div class="reason-num">02</div>
+        <div class="reason-icon">👨‍👩‍👧‍👦</div>
+        <h3 data-tw="reason2Title">ご家族への<br>手厚いサポート</h3>
+        <p data-tw="reason2Body">ご本人だけでなく、支えるご家族の悩みや疲れにも寄り添います。関わり方の相談もお気軽にどうぞ。</p>
+      </div>
+      <div class="reason-card" data-editable-item>
+        <div class="reason-num">03</div>
+        <div class="reason-icon">💚</div>
+        <h3 data-tw="reason3Title">精神科看護に<br>特化した専門性</h3>
+        <p data-tw="reason3Body">精神科病棟・訪問看護での経験豊富なスタッフが在籍。安心して療養生活を任せていただけます。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== ご利用の流れ ===== -->
+<section class="flow" id="flow" data-editable-section="flow" data-section-label="ご利用の流れ">
+  <div class="container">
+    <span class="section-eyebrow">Flow</span>
+    <h2 class="section-title">ご利用の<span class="green-word">流れ</span></h2>
+    <p class="section-sub">お問い合わせから利用開始まで、スムーズにサポートいたします。</p>
+
+    <div class="flow-steps" data-editable-list="flow-items">
+      <div class="flow-step" data-editable-item>
+        <div class="flow-num"><div><div class="step-label">STEP</div><div class="step-value">01</div></div></div>
+        <div>
+          <h3 data-tw="flow1Title">お問い合わせ・ご相談</h3>
+          <p data-tw="flow1Body">お電話・LINE・お問い合わせフォームより、お気軽にご相談ください。相談は無料です。</p>
+        </div>
+      </div>
+      <div class="flow-step" data-editable-item>
+        <div class="flow-num"><div><div class="step-label">STEP</div><div class="step-value">02</div></div></div>
+        <div>
+          <h3 data-tw="flow2Title">主治医との連絡・訪問看護指示書の取得</h3>
+          <p data-tw="flow2Body">主治医の先生に訪問看護指示書を発行いただきます。手続きのサポートも致します。</p>
+        </div>
+      </div>
+      <div class="flow-step" data-editable-item>
+        <div class="flow-num"><div><div class="step-label">STEP</div><div class="step-value">03</div></div></div>
+        <div>
+          <h3 data-tw="flow3Title">初回面談・計画立案</h3>
+          <p data-tw="flow3Body">ご本人・ご家族とじっくりお話しし、生活状況や希望を伺った上で個別の看護計画を作成します。</p>
+        </div>
+      </div>
+      <div class="flow-step" data-editable-item>
+        <div class="flow-num"><div><div class="step-label">STEP</div><div class="step-value">04</div></div></div>
+        <div>
+          <h3 data-tw="flow4Title">訪問看護スタート</h3>
+          <p data-tw="flow4Body">週1〜複数回、ご自宅にて看護師がサポートします。状況に応じて柔軟に対応いたします。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 料金 ===== -->
+<section class="pricing" id="pricing" data-editable-section="pricing" data-section-label="料金・費用">
+  <div class="container">
+    <span class="section-eyebrow">Pricing</span>
+    <h2 class="section-title"><span class="green-word">料金</span>・費用について</h2>
+    <p class="section-sub">医療保険・自立支援医療制度の適用で、自己負担を大幅に抑えられます。</p>
+
+    <div class="pricing-card">
+      <h3 data-tw="pricingHead">医療保険適用の場合</h3>
+      <div class="big" data-tw="pricingPrice">1割〜3割<small>負担</small></div>
+      <ul class="pricing-list">
+        <li data-tw="pricingItem1">週3回まで訪問可能（症状に応じて増回対応）</li>
+        <li data-tw="pricingItem2">自立支援医療で自己負担1割に軽減できる場合あり</li>
+        <li data-tw="pricingItem3">生活保護受給の方は自己負担なし</li>
+        <li data-tw="pricingItem4">交通費・事務手数料は無料</li>
+      </ul>
+      <p class="pricing-note" data-tw="pricingNote">
+        ※ 実際の負担額は保険の種類・所得区分により異なります。詳細はお気軽にお問い合わせください。初回相談時に丁寧にご説明いたします。
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 対応エリア ===== -->
+<section class="area" id="area" data-editable-section="area" data-section-label="対応エリア">
+  <div class="container">
+    <span class="section-eyebrow">Area</span>
+    <h2 class="section-title"><span class="green-word">対応</span>エリア</h2>
+    <p class="section-sub">福岡市を中心に、近郊エリアに訪問いたします。</p>
+
+    <div class="area-map">
+      <div class="area-visual">
+        
+        <div class="label" data-tw="areaLabel">福岡・近郊エリア対応</div>
+      </div>
+      <div class="area-list">
+        <h3 data-tw="areaTitle">主な対応地域</h3>
+        <ul class="cities">
+          <li data-tw="area1">福岡市中央区</li>
+          <li data-tw="area2">福岡市博多区</li>
+          <li data-tw="area3">福岡市南区</li>
+          <li data-tw="area4">福岡市城南区</li>
+          <li data-tw="area5">福岡市早良区</li>
+          <li data-tw="area6">福岡市西区</li>
+          <li data-tw="area7">福岡市東区</li>
+        </ul>
+        <p class="note" data-tw="areaNote">
+          ※ 上記以外の地域もご相談ください。事務所からの距離に応じて対応可否をお答えします。まずはお気軽にお問い合わせください。
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== スタッフ ===== -->
+<section class="staff" id="staff" data-editable-section="staff" data-section-label="スタッフ紹介">
+  <div class="container">
+    <span class="section-eyebrow">Staff</span>
+    <h2 class="section-title"><span class="green-word">スタッフ</span>紹介</h2>
+    <p class="section-sub">経験豊富な看護師があなたの暮らしに寄り添います。</p>
+
+    <div class="staff-grid" data-editable-list="staff-items">
+      <div class="staff-card" data-editable-item>
+        <div class="staff-avatar">
+          <image-slot id="staff-1" shape="circle" placeholder="スタッフ写真"></image-slot>
+        </div>
+        <div class="role" data-tw="staff1Role">管理者・精神科認定看護師</div>
+        <div class="name" data-tw="staff1Name">山田 花子</div>
+        <p class="bio" data-tw="staff1Bio">精神科病棟で15年の経験を経て、訪問看護へ。「暮らしの中で回復を支える」ことを大切にしています。</p>
+      </div>
+      <div class="staff-card" data-editable-item>
+        <div class="staff-avatar">
+          <image-slot id="staff-2" shape="circle" placeholder="スタッフ写真"></image-slot>
+        </div>
+        <div class="role" data-tw="staff2Role">主任看護師</div>
+        <div class="name" data-tw="staff2Name">佐藤 太郎</div>
+        <p class="bio" data-tw="staff2Bio">就労支援との連携が強み。社会復帰に向けたステップを一緒に考えるのが得意です。</p>
+      </div>
+      <div class="staff-card" data-editable-item>
+        <div class="staff-avatar">
+          <image-slot id="staff-3" shape="circle" placeholder="スタッフ写真"></image-slot>
+        </div>
+        <div class="role" data-tw="staff3Role">看護師・精神保健福祉士</div>
+        <div class="name" data-tw="staff3Name">鈴木 美咲</div>
+        <p class="bio" data-tw="staff3Bio">ご家族支援を専門としています。誰にも言えない悩みを、まずは私に話してみてください。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ ===== -->
+<section class="faq" id="faq" data-editable-section="faq" data-section-label="よくある質問">
+  <div class="container">
+    <span class="section-eyebrow">FAQ</span>
+    <h2 class="section-title">よくある<span class="green-word">ご質問</span></h2>
+    <p class="section-sub">お問い合わせの前に、こちらもぜひご確認ください。</p>
+
+    <div class="faq-list" data-editable-list="faq-items">
+      <details class="faq-item" data-editable-item>
+        <summary data-tw="faq1Q">訪問看護って何をしてくれるの？</summary>
+        <div class="faq-answer" data-tw="faq1A">看護師がご自宅を訪問し、健康状態の確認、服薬管理、生活リズムのサポート、社会復帰の相談など幅広く対応します。ご本人だけでなくご家族の相談も承ります。</div>
+      </details>
+      <details class="faq-item" data-editable-item>
+        <summary data-tw="faq2Q">どのくらいの頻度で来てもらえますか？</summary>
+        <div class="faq-answer" data-tw="faq2A">医療保険では週3回まで(症状により増回可能)、状況に応じて柔軟に調整します。まずは週1回から始める方が多いです。</div>
+      </details>
+      <details class="faq-item" data-editable-item>
+        <summary data-tw="faq3Q">利用するにはどんな手続きが必要ですか？</summary>
+        <div class="faq-answer" data-tw="faq3A">主治医の先生に「訪問看護指示書」を発行いただく必要があります。手続きは私たちがサポートいたしますので、まずはお気軽にご相談ください。</div>
+      </details>
+      <details class="faq-item" data-editable-item>
+        <summary data-tw="faq4Q">本人が「来てほしくない」と言っている場合は？</summary>
+        <div class="faq-answer" data-tw="faq4A">まずはご家族からのご相談だけでも構いません。関わり方のアドバイスや、無理のない導入方法を一緒に考えていきます。</div>
+      </details>
+      <details class="faq-item" data-editable-item>
+        <summary data-tw="faq5Q">料金はどれくらいかかりますか？</summary>
+        <div class="faq-answer" data-tw="faq5A">医療保険適用で1〜3割負担が基本です。自立支援医療制度や生活保護の場合、自己負担が軽減または無料になります。</div>
+      </details>
+      <details class="faq-item" data-editable-item>
+        <summary data-tw="faq6Q">主治医がいない場合は利用できますか？</summary>
+        <div class="faq-answer" data-tw="faq6A">主治医の指示書が必要となるため、まず医療機関の受診が必要です。近隣の医療機関のご紹介もいたしますのでご相談ください。</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA ===== -->
+<section class="cta-block" id="line" data-editable-section="cta" data-section-label="CTAブロック">
+  <div class="cta-inner">
+    <h2 data-tw="ctaTitle">まずは<span class="green-word">無料で</span>お話を聞いてみませんか？</h2>
+    <p data-tw="ctaLead">ご本人でも、ご家族でも、どなたからのご相談でも大丈夫です。<br>「これって相談していいのかな」というレベルからお気軽にどうぞ。</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="btn btn-primary" data-tw="ctaBtn1">✉︎ お問い合わせフォーム</a>
+      <a href="tel:092-401-8500" class="btn btn-outline" data-tw="ctaBtn2">📞 電話で相談する</a>
+      <a href="https://lin.ee/7bjddsX" class="btn btn-line" data-tw="ctaBtn3">LINEで相談する</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Contact form ===== -->
+<section class="contact" id="contact" data-editable-section="contact" data-section-label="お問い合わせフォーム">
+  <div class="container">
+    <span class="section-eyebrow">Contact</span>
+    <h2 class="section-title"><span class="green-word">お問い合わせ</span></h2>
+    <p class="section-sub">下記フォーム、お電話、LINEのいずれかでご連絡ください。</p>
+
+    <div class="contact-inner">
+      <div class="contact-side">
+        <h3 data-tw="contactSideTitle">複数の連絡方法をご用意しています</h3>
+        <p data-tw="contactSideBody">ご自身に合った方法でご連絡ください。営業時間内であれば当日中にご返答いたします。</p>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <div class="ico">📞</div>
+            <div>
+              <div class="cm-label">お電話</div>
+              <div class="cm-value" data-tw="contactPhone">092-401-8500</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="ico">✉︎</div>
+            <div>
+              <div class="cm-label">メール</div>
+              <div class="cm-value" data-tw="contactMail"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="61080f070e210419000c110d044f020e4f0b11">[email&#160;protected]</a></div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="ico">💬</div>
+            <div>
+              <div class="cm-label">LINE</div>
+              <div class="cm-value" data-tw="contactLine">公式LINEで24時間受付</div>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="ico">🕐</div>
+            <div>
+              <div class="cm-label">営業時間</div>
+              <div class="cm-value" data-tw="contactHours">平日 9:00〜18:00</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" onsubmit="event.preventDefault(); alert('お問い合わせありがとうございます。担当者よりご連絡いたします。');">
+        <div class="form-field">
+          <label>お名前<span class="req">必須</span></label>
+          <input type="text" placeholder="山田 太郎" required>
+        </div>
+        <div class="form-field">
+          <label>電話番号<span class="req">必須</span></label>
+          <input type="tel" placeholder="090-0000-0000" required>
+        </div>
+        <div class="form-field">
+          <label>メールアドレス</label>
+          <input type="email" placeholder="example@mail.com">
+        </div>
+        <div class="form-field">
+          <label>ご相談内容<span class="req">必須</span></label>
+          <select required>
+            <option value="">選択してください</option>
+            <option>ご本人からの相談</option>
+            <option>ご家族からの相談</option>
+            <option>医療関係者からの相談</option>
+            <option>その他</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label>お問い合わせ内容</label>
+          <textarea placeholder="現在のお困りごとなど、お気軽にお書きください。"></textarea>
+        </div>
+        <button type="submit" class="form-submit">💬 送信する</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand">
+        <div class="brand-mark">🌱</div>
+        <div class="brand-name">
+          メンタルヘルスラボの訪問看護 福岡
+          <span class="sub">Fukuoka</span>
+        </div>
+      </div>
+      <p data-tw="footerAddress">〒810-0023<br>福岡県福岡市中央区警固2丁目11-10 高橋ビル401</p>
+    </div>
+    <div>
+      <h4>サービス</h4>
+      <ul>
+        <li><a href="#services">訪問看護でできること</a></li>
+        <li><a href="#reasons">選ばれる理由</a></li>
+        <li><a href="#flow">ご利用の流れ</a></li>
+        <li><a href="#pricing">料金・費用</a></li>
+      </ul>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+    © 2026 メンタルヘルスラボの訪問看護 福岡. All rights reserved.
+  </div>
+</footer>
+
+<!-- ===== Floating CTA ===== -->
+<div class="floating-cta">
+  <a href="#contact" class="btn btn-primary">✉︎ 相談する</a>
+  <a href="https://lin.ee/73JkJMf" class="btn btn-line">LINE</a>
+</div>
+
+<!-- Tweaks Panel -->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="text/babel" src="tweaks_panel.jsx"></script>
+<script src="edit-engine.js"></script>
+<script type="text/babel" src="tweaks-app.jsx"></script>
+
+</body>
+</html>
